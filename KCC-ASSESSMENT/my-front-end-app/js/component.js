@@ -100,7 +100,7 @@ document.querySelector("#component-table").addEventListener("click",(e) =>{
             }
             else {
                 if(window.confirm("Are you sure you want to delete this component? This will delete all supplier links it has!")) {
-                    deleteComponent({"componentid":cid}).then(() => getTableData()).then(() => showAlert("Product Deleted!","success"));
+                    deleteComponent({"componentid":cid}).then(() => getTableData()).then(() => showAlert("Component Deleted!","success"));
                 }
             }
         })
